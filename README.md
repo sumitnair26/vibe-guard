@@ -59,6 +59,12 @@ cp -r vibe-guard/REACT/.claude your-project/.claude
 
 # Node.js (Express + TypeScript)
 cp -r vibe-guard/NODE/.claude your-project/.claude
+
+# React Native (Expo + TypeScript)
+cp -r vibe-guard/REACT_NATIVE/.claude your-project/.claude
+
+# NestJS (TypeScript)
+cp -r vibe-guard/NEST/.claude your-project/.claude
 ```
 
 ### 3. Fill in your 4 guardrail files
@@ -201,7 +207,7 @@ At Claude Sonnet pricing this is **cents per feature**, not dollars.
 
 ## Folder Structure
 
-Two ready-to-use templates live in this repo:
+Four ready-to-use templates live in this repo:
 
 ```
 vibe-guard/
@@ -222,7 +228,42 @@ vibe-guard/
 │   ├── requirements/
 │   └── docs/
 │
-└── NODE/                          ← Node.js + Express + TypeScript template
+├── NODE/                          ← Node.js + Express + TypeScript template
+│   ├── .claude/
+│   │   ├── CLAUDE.md
+│   │   ├── CODING_STANDARDS.md
+│   │   ├── LIBRARY_ALLOWLIST.md
+│   │   ├── PROJECT_DETAILS.md
+│   │   ├── PROJECT_STRUCTURE.md
+│   │   └── commands/
+│   │       ├── implement.md
+│   │       ├── plan-feature.md
+│   │       ├── review.md
+│   │       ├── document.md
+│   │       └── debug.md
+│   ├── src/                       ← Scaffold: routes, controllers, services, middleware …
+│   ├── requirements/
+│   └── docs/
+│
+├── REACT_NATIVE/                  ← React Native + Expo + TypeScript template
+│   ├── .claude/
+│   │   ├── CLAUDE.md
+│   │   ├── CODING_STANDARDS.md
+│   │   ├── LIBRARY_ALLOWLIST.md
+│   │   ├── PROJECT_DETAILS.md
+│   │   ├── PROJECT_STRUCTURE.md
+│   │   └── commands/
+│   │       ├── implement.md
+│   │       ├── plan-feature.md
+│   │       ├── review.md
+│   │       ├── document.md
+│   │       └── debug.md
+│   ├── app/                       ← Expo Router file-based routes
+│   ├── src/                       ← Scaffold: components, hooks, services, context …
+│   ├── requirements/
+│   └── docs/
+│
+└── NEST/                          ← NestJS + TypeScript template
     ├── .claude/
     │   ├── CLAUDE.md
     │   ├── CODING_STANDARDS.md
@@ -235,7 +276,7 @@ vibe-guard/
     │       ├── review.md
     │       ├── document.md
     │       └── debug.md
-    ├── src/                       ← Scaffold: routes, controllers, services, middleware …
+    ├── src/                       ← Scaffold: modules, common filters, guards, pipes …
     ├── requirements/
     └── docs/
 ```
