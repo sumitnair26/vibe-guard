@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/Users/sumitnair/Just Code/vibe-guard/NODE/.claude/commands\" && mkdir -p \"/Users/sumitnair/Just Code/vibe-guard/NODE/src/routes\" \"/Users/sumitnair/Just Code/vibe-guard/NODE/src/controllers\" \"/Users/sumitnair/Just Code/vibe-guard/NODE/src/services\" \"/Users/sumitnair/Just Code/vibe-guard/NODE/src/middleware\" \"/Users/sumitnair/Just Code/vibe-guard/NODE/src/models\" \"/Users/sumitnair/Just Code/vibe-guard/NODE/src/lib\" \"/Users/sumitnair/Just Code/vibe-guard/NODE/src/types\" \"/Users/sumitnair/Just Code/vibe-guard/NODE/src/config\" \"/Users/sumitnair/Just Code/vibe-guard/NODE/requirements\" \"/Users/sumitnair/Just Code/vibe-guard/NODE/docs\")"
+    ],
+    "additionalDirectories": [
+      "/Users/sumitnair/Just Code/vibe-guard/NODE/.claude"
+    ]
+  }
+}
