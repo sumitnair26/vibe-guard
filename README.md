@@ -68,6 +68,9 @@ cp -r vibe-guard/NEST/.claude your-project/.claude
 
 # Java (Spring Boot 3 + Java 21)
 cp -r vibe-guard/JAVA/.claude your-project/.claude
+
+# .NET (ASP.NET Core 8 + Clean Architecture)
+cp -r vibe-guard/DOTNET/.claude your-project/.claude
 ```
 
 ### 3. Fill in your 4 guardrail files
@@ -283,7 +286,27 @@ vibe-guard/
 │   ├── requirements/
 │   └── docs/
 │
-└── JAVA/                          ← Java 21 + Spring Boot 3 template
+├── JAVA/                          ← Java 21 + Spring Boot 3 template
+│   ├── .claude/
+│   │   ├── CLAUDE.md
+│   │   ├── CODING_STANDARDS.md
+│   │   ├── LIBRARY_ALLOWLIST.md
+│   │   ├── PROJECT_DETAILS.md
+│   │   ├── PROJECT_STRUCTURE.md
+│   │   └── commands/
+│   │       ├── implement.md
+│   │       ├── plan-feature.md
+│   │       ├── review.md
+│   │       ├── document.md
+│   │       └── debug.md
+│   ├── src/
+│   │   ├── main/java/com/example/app/  ← controller, service, repository, model, dto, exception …
+│   │   └── main/resources/             ← application.yml, Flyway migrations
+│   ├── pom.xml
+│   ├── requirements/
+│   └── docs/
+│
+└── DOTNET/                        ← .NET 8 + ASP.NET Core + Clean Architecture template
     ├── .claude/
     │   ├── CLAUDE.md
     │   ├── CODING_STANDARDS.md
@@ -297,9 +320,13 @@ vibe-guard/
     │       ├── document.md
     │       └── debug.md
     ├── src/
-    │   ├── main/java/com/example/app/  ← controller, service, repository, model, dto, exception …
-    │   └── main/resources/             ← application.yml, Flyway migrations
-    ├── pom.xml
+    │   ├── Api/                   ← Controllers, Middleware, Program.cs
+    │   ├── Application/           ← MediatR commands/queries, DTOs, validators
+    │   ├── Domain/                ← Entities, value objects, domain events
+    │   └── Infrastructure/        ← EF Core DbContext, repositories, services
+    ├── tests/
+    │   ├── Application.UnitTests/
+    │   └── Api.IntegrationTests/
     ├── requirements/
     └── docs/
 ```
