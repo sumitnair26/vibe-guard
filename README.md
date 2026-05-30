@@ -34,7 +34,7 @@ Your Idea
     ↓  checks → standards + library + structure compliance
 /document src/auth/passwordReset.ts
     ↓  generates → docs
-Done ✅
+Done 
 ```
 
 No hallucinated libraries. No files in the wrong place. No style violations.
