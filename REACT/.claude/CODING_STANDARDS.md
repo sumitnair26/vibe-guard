@@ -9,7 +9,7 @@
 - Functional components only, no class components
 - One component per file, filename matches component name (PascalCase)
 - Props interface defined above the component: `interface ComponentNameProps {}`
-- No inline styles — use CSS Modules (`.module.css`)
+- No inline styles — use CSS Modules (`.module.css`) or Tailwind utility classes
 
 ## State & side effects
 - `useState` for local UI state only
@@ -23,6 +23,10 @@
 - Constants: `UPPER_SNAKE_CASE`
 - CSS module classes: `camelCase`
 - Files: match the export name exactly
+
+## Assets
+- SVGs downloaded from Figma MCP must be post-processed before saving: set explicit `width` and `height` pixel values, remove `preserveAspectRatio="none"`, remove `style="display: block;"`, and replace all `fill="var(--fill-0, <color>)"` patterns with their hardcoded fallback color values
+- Never save Figma MCP assets with `width="100%"` or `height="100%"` — always use fixed pixel dimensions matching the original Figma frame size
 
 ## Error handling
 - Async functions must handle errors with try/catch

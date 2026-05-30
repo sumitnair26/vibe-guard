@@ -10,6 +10,7 @@
 - `@tanstack/react-query` — server state, caching, async data
 - `date-fns` — date formatting and manipulation
 - `clsx` — conditional className merging
+- `tailwindcss` + `@tailwindcss/vite` — utility-first CSS (v4, Vite plugin)
 
 ## Dev / tooling only
 
